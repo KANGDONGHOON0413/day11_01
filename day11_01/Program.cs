@@ -40,6 +40,32 @@ namespace day11_01
                 }
                 Console.WriteLine();
             }
+
+
+            foreach (int m in arr2) Console.Write(m);
+
+            //가변배열 선언과 초기화    
+            int[][] arr4 = new int[3][] {
+                new int[] {10, 20, 30},
+                new int[] {12, 22, 23, 24, 25, 30},
+                new int[] {0,1,2,3,4,5}
+            };
+
+            //가변배열 출력    
+            for (int i = 0; i < arr4.Length; i++)
+            {
+                
+                Console.Write("\narr[" + i + "]: ");
+
+                //각 1차원 배열의 길이        
+                for (int j = 0; j < arr4[i].Length; j++)
+                {
+                    Console.Write(arr4[i][j] + " ");
+                }
+                Console.WriteLine();
+
+            }
+
         }
 
        
